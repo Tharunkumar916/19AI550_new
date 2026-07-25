@@ -1,6 +1,6 @@
 # Ex.No: 3  Basic movements in Unity 
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE: 25.7.26                                                                           
+### REGISTER NUMBER : 212224240173
 ### AIM: 
  To learn the basic movements translation,scaling and rotation of game objects through code.
 ### Procedure:
@@ -18,40 +18,32 @@
 ### Program 
 ```
 using UnityEngine;
-public class TransformOperations : MonoBehaviour
+
+public class welcome : MonoBehaviour
 {
-    public Transform object1; // Object for translation
-    public Transform object2; // Object for rotation
-    public Transform object3; // Object for scaling
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Transform o1;
+    public Transform o2;
+    public Transform o3;
+    void Start()
+    {
+        print("Welcome");
+    }
 
-    public float moveSpeed = 2f;  // Speed of translation
-    public float rotateSpeed = 50f; // Speed of rotation
-    public float scaleSpeed = 0.5f; // Speed of scaling
-
+    // Update is called once per frame
     void Update()
     {
-        // Translate (Move) object1 along the X-axis- Time.deltaTime to make movement smooth across all frame rates
-        if (object1 != null)
+        if (Input.GetKeyUp(KeyCode.X))
         {
-           // object1.position += Vector3.right * moveSpeed;
-               object1.Translate(0.02f,0,0);
-
+            o1.Translate(0.2f, 0f, 0f);
         }
-
-        // Rotate object2 around the Y-axis
-        if (object2 != null)
+        if (Input.GetKeyUp(KeyCode.Y))
         {
-            //object2.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
-            //object2.Rotate(0,0.02f.0);
+            o2.Rotate(0f, 6f, 0f);
         }
-
-        // Scale object3 up and down
-        if (object3 != null)
+        if (Input.GetKeyUp(KeyCode.Z))
         {
-           // float scaleChange = Mathf.PingPong(Time.time * scaleSpeed, 1f) + 0.5f; // generates a value that moves back and forth between 0 and length
-           // object3.localScale = new Vector3(scaleChange, scaleChange, scaleChange);
-            object3.localScale+=new Vector3(0.02f.0.02f,0);
-
+            o3.localScale += new Vector3(0.2f, 0.2f, 0.2f);
         }
     }
 }
@@ -60,6 +52,7 @@ public class TransformOperations : MonoBehaviour
 
 
 
+<img width="1911" height="1113" alt="Screenshot 2026-07-24 145044" src="https://github.com/user-attachments/assets/54a32707-ccc6-425d-8c27-a2d72ec73323" />
 
 
 
