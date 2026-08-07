@@ -138,7 +138,7 @@ Check the following
 3. WaypointGraph script on a manager
 4. AICharacter assigned a start and goal
 ### Output:
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/57b815d1-3e6e-4d63-bed7-23dae53d639c" />
+<img width="1920" height="1200" alt="Screenshot 2026-08-07 135441" src="https://github.com/user-attachments/assets/0d7c56be-ab57-45e9-bbbd-06b0ce65e9a4" />
 
 
 
